@@ -1,3 +1,6 @@
 WASD to move
 
-mouse to attack
+Mouse to attack
+
+You can change screen resolution with config.cfg,
+but a 1:1 aspect ratio is required.

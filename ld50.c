@@ -3,6 +3,8 @@
 #include <math.h>
 #include <cef.h>
 
+__asm__( ".symver realpath,realpath@GLIBC_2.25" );
+
 struct{
 	unsigned int up : 1;
 	unsigned int down : 1;
@@ -12,7 +14,7 @@ struct{
 	unsigned int restart : 1;
 	float cursor_x;
 	float cursor_y;
-}input_buffer = {0,0,0,0,0};
+}input_buffer = {0,0,0,0,0,0};
 
 const float left_bound = -5.0f;
 const float right_bound = 5.0f;
